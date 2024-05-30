@@ -1,0 +1,86 @@
+.container{
+    margin:auto;
+    margin-top:5vw;
+    border:.5vw solid black;
+    width:350px;
+    height: 500px;
+    background:rgb(255, 255, 255);
+    border-radius: 50px 5px;
+    display:-block;
+    text-align: center;
+    background-color:rgba(0, 255, 255, 0.307);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    user-select: none;
+
+}
+h1{
+    color:lightcoral;
+    filter:blur(0px);
+    margin-top:auto;
+    text-align: center;
+}
+h2{
+    color:lightcoral;
+    filter:blur(0px);
+    margin-top:50px;
+    
+}
+label{
+    color: brown;
+    font-size: 20px;
+    margin-left:-200px;
+    margin-top: 25px;
+}
+input{
+    border-radius: 25px;
+    border-color:red;
+    padding:5px 10px;
+    background-color:lightgrey;
+    transition:.25s;
+    width:300px;
+    transition-timing-function:linear;
+    color: blue;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+input:focus {
+    background-color:white;
+    outline: 2px solid green;
+    border:  2px solid green;
+    box-shadow: 10px 10px 10px green;
+    width:320px;
+}
+a{
+    margin:0px 10px;
+}
+button.submit{
+    background-color: gold;
+    color: brown;
+    border:2px solid black;
+    border-radius: 25px;
+    padding:5px 10px;
+    width: 75px;
+    box-shadow: 2px 7px 5px green;
+    margin-top: 35px;
+    position: absolute;
+    margin-left:-100px
+}
+.submit:active{
+    box-shadow: 2px 3px 2px green;
+    margin-top:42px;
+}
+button.reset{
+    background-color: gold;
+    color: brown;
+    border:2px solid black;
+    border-radius: 25px;
+    padding:5px 10px;
+    width: 75px;
+    box-shadow: 2px 7px 5px green;
+    margin-top: 35px;
+    position: absolute;
+}
+.reset:active{
+    box-shadow: 2px 3px 2px green;
+    margin-top:42px;
+}

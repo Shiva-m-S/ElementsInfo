@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.elementary.com</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+</head>
+<body id="home">
+    <div class="container">
+        <table class="table" cellspacing="1">
+            <tr>
+                <td  id="sign-up-button" colspan="20">
+                    <button id="sign-up">Log-In/Sign-Up></button>
+                    <div class="sign-up" >
+                        <p class="sign-up"><a class="sign-up" href="/sign-up">SIGN-UP</a></p>
+                        <p class="sign-up"><a class="sign-up" href="/log-in">LOG-IN</a></p>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="20" class="heading "><h1>Periodic Table of the Elements</h1><hr></td>
+            </tr>
+            <tr>
+                <td colspan="20" id="details"><h3>Click on an element to see details </h3></td>
+            </tr>
+            <tr>
+                <td colspan="20" class="iframe"><iframe  id="iframe" ></iframe><hr></td>
+            </tr>
+            <tr>
+                <td rowspan="8" class="text period"><p>Period <span>&#8594</p></span></td>
+                <td class="none"></td>
+                <td class="number">1</td>
+                <td class="none" colspan="16"></td>
+                <td  class="number">18</td>
+            </tr>
+            <tr>
+                <td  class="number">1</td>
+                <td class="ele reactive-non-metals" onclick="change(this.firstElementChild.innerText)">1<b>H</b></td>
+                <td  class="number">2</td>
+                <td class="none" colspan="10"></td>
+                <td class="number">13</td>
+                <td class="number">14</td>
+                <td class="number">15</td>
+                <td class="number">16</td>
+                <td class="number">17</td>
+                <td class="ele nobel-gases" onclick="change(this.firstElementChild.innerText)">2<b>He</b></td>
+            </tr>
+            <tr>
+                <td  class="number">2</td>
+                <td class="ele alkali-metals" onclick="change(this.firstElementChild.innerText)">3<b>Li</b></td>
+                <td class="ele alkaline-earth-metals" onclick="change(this.firstElementChild.innerText)">4<b>Be</b></td>
+                <td colspan="10" class="text">Group <span> &#8594</span></td>
+                <td class="ele metalloids" onclick="change(this.firstElementChild.innerText)">5<b>B</b></td>
+                <td class="ele reactive-non-metals" onclick="change(this.firstElementChild.innerText)">6<b>C</b></td>
+                <td class="ele reactive-non-metals" onclick="change(this.firstElementChild.innerText)">7<b>N</b></td>
+                <td class="ele reactive-non-metals" onclick="change(this.firstElementChild.innerText)">8<b>O</b></td>
+                <td class="ele reactive-non-metals" onclick="change(this.firstElementChild.innerText)">9<b>F</b></td>
+                <td class="ele nobel-gases" onclick="change(this.firstElementChild.innerText)">10<b>Ne</b></td>
+            </tr>
+            <tr>
+                <td  class="number">3</td>
+                <td class="ele alkali-metals" onclick="change(this.firstElementChild.innerText)">11<b>Na</b></td>
+                <td class="ele alkaline-earth-metals" onclick="change(this.firstElementChild.innerText)">12<b>Mg</b></td>
+                <td class="number">3</td>
+                <td class="number">4</td>
+                <td class="number">5</td>
+                <td class="number">6</td>
+                <td class="number">7</td>
+                <td class="number">8</td>
+                <td class="number">9</td>
+                <td class="number">10</td>
+                <td class="number">11</td>
+                <td class="number">12</td>
+                <td class="ele post-transition-metals" onclick="change(this.firstElementChild.innerText)">13<b>Al</b></td>
+                <td class="ele metalloids" onclick="change(this.firstElementChild.innerText)">14<b>Si</b></td>
+                <td class="ele reactive-non-metals" onclick="change(this.firstElementChild.innerText)">15<b>P</b> </td>
+                <td class="ele reactive-non-metals" onclick="change(this.firstElementChild.innerText)">16<b>S</b> </td>
+                <td class="ele reactive-non-metals" onclick="change(this.firstElementChild.innerText)">17<b>Cl</b></td>
+                <td class="ele nobel-gases" onclick="change(this.firstElementChild.innerText)">18<b>Ar</b></td>
+            </tr>
+            <tr>
+                <td class="number">4</td>
+                <td class="ele alkali-metals" onclick="change(this.firstElementChild.innerText)">19<b>K</b></td>
+                <td class="ele alkaline-earth-metals" onclick="change(this.firstElementChild.innerText)">20<b>Ca</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">21<b>Sc</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">22<b>Ti</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">23<b>V</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">24<b>Cr</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">25<b>Mn</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">26<b>Fe</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">27<b>Co</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">28<b>Ni</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">29<b>Cu</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">30<b>Zn</b></td>
+                <td class="ele post-transition-metals" onclick="change(this.firstElementChild.innerText)">31<b>Ga</b></td>
+                <td class="ele metalloids" onclick="change(this.firstElementChild.innerText)">32<b>Ge</b></td>
+                <td class="ele metalloids" onclick="change(this.firstElementChild.innerText)">33<b>As</b></td>
+                <td class="ele reactive-non-metals" onclick="change(this.firstElementChild.innerText)">34<b>Se</b></td>
+                <td class="ele reactive-non-metals" onclick="change(this.firstElementChild.innerText)">35<b>Br</b></td>
+                <td class="ele nobel-gases" onclick="change(this.firstElementChild.innerText)">36<b>Kr</b></td>
+            </tr>
+            <tr>
+                <td  class="number">5</td>
+                <td class="ele alkali-metals" onclick="change(this.firstElementChild.innerText)">37<b>Rb</b></td>
+                <td class="ele alkaline-earth-metals" onclick="change(this.firstElementChild.innerText)">38<b>Sr</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">39<b>Y</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">40<b>Zr</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">41<b>Nb</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">42<b>Mo</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">43<b>Tc</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">44<b>Ru</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">45<b>Rh</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">46<b>Pd</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">47<b>Ag</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">48<b>Cd</b></td>
+                <td class="ele post-transition-metals" onclick="change(this.firstElementChild.innerText)">49<b>In</b></td>
+                <td class="ele post-transition-metals" onclick="change(this.firstElementChild.innerText)">50<b>Sn</b></td>
+                <td class="ele metalloids" onclick="change(this.firstElementChild.innerText)">51<b>Sb</b></td>
+                <td class="ele metalloids" onclick="change(this.firstElementChild.innerText)">52<b>Te</b></td>
+                <td class="ele reactive-non-metals" onclick="change(this.firstElementChild.innerText)">53<b>I</b></td>
+                <td class="ele nobel-gases" onclick="change(this.firstElementChild.innerText)">54<b>Xe</b></td>
+            </tr>
+            <tr>
+                <td  class="number">6</td>
+                <td class="ele alkali-metals" onclick="change(this.firstElementChild.innerText)">55<b>Cs</b></td>
+                <td class="ele alkaline-earth-metals" onclick="change(this.firstElementChild.innerText)">56<b>Ba</b></td>
+                <td class="ele lanthanides" onclick="change(this.firstElementChild.innerText)">57<b>La</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">72<b>Hf</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">73<b>Ta</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">74<b>W</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">75<b>Re</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">76<b>Os</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">77<b>Ir</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">78<b>Pt</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">79<b>Au</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">80<b>Hg</b></td>
+                <td class="ele post-transition-metals" onclick="change(this.firstElementChild.innerText)">81<b>Ti</b></td>
+                <td class="ele post-transition-metals" onclick="change(this.firstElementChild.innerText)">82<b>Pb</b></td>
+                <td class="ele post-transition-metals" onclick="change(this.firstElementChild.innerText)">83<b>Bi</b></td>
+                <td class="ele post-transition-metals" onclick="change(this.firstElementChild.innerText)">84<b>Po</b></td>
+                <td class="ele post-transition-metals" onclick="change(this.firstElementChild.innerText)">85<b>At</b></td>
+                <td class="ele nobel-gases" onclick="change(this.firstElementChild.innerText)">86<b>Rn</b></td>
+            </tr>
+            <tr>
+                <td  class="number">7</td>
+                <td class="ele alkali-metals" onclick="change(this.firstElementChild.innerText)">87<b>Fr</b></td>
+                <td class="ele alkaline-earth-metals" onclick="change(this.firstElementChild.innerText)">88<b>Ra</b></td>
+                <td class="ele actinides" onclick="change(this.firstElementChild.innerText)">89<b>Ac</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">104<b>Rf</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">105<b>Db</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">106<b>Sg</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">107<b>Bh</b></td>
+                <td class="ele transition-metals" onclick="change(this.firstElementChild.innerText)">108<b>Hs</b></td>
+                <td class="ele unknown-properties" onclick="change(this.firstElementChild.innerText)">109<b>Mt</b></td>
+                <td class="ele unknown-properties" onclick="change(this.firstElementChild.innerText)">110<b>Ds</b></td>
+                <td class="ele unknown-properties" onclick="change(this.firstElementChild.innerText)">111<b>Rg</b></td>
+                <td class="ele unknown-properties" onclick="change(this.firstElementChild.innerText)">112<b>Cn</b></td>
+                <td class="ele unknown-properties" onclick="change(this.firstElementChild.innerText)">113<b>Nh</b></td>
+                <td class="ele unknown-properties" onclick="change(this.firstElementChild.innerText)">114<b>Fl</b></td>
+                <td class="ele unknown-properties" onclick="change(this.firstElementChild.innerText)">115<b>Mc</b></td>
+                <td class="ele unknown-properties" onclick="change(this.firstElementChild.innerText)">116<b>Lv</b></td>
+                <td class="ele unknown-properties" onclick="change(this.firstElementChild.innerText)">117<b>Ts</b></td>
+                <td class="ele unknown-properties" onclick="change(this.firstElementChild.innerText)">118<b>Og</b></td>
+            </tr>
+            <tr>
+                <td colspan="20" class="gap"></td>
+            </tr>
+
+            <tr >
+                <td class="text" colspan="6">Lanthanides</td>
+                <td class="ele lanthanides" onclick="change(this.firstElementChild.innerText)">58<b>Ce</b></td>
+                <td class="ele lanthanides" onclick="change(this.firstElementChild.innerText)">59<b>Pr</b></td>
+                <td class="ele lanthanides" onclick="change(this.firstElementChild.innerText)">60<b>Nd</b></td>
+                <td class="ele lanthanides" onclick="change(this.firstElementChild.innerText)">61<b>Pm</b></td>
+                <td class="ele lanthanides" onclick="change(this.firstElementChild.innerText)">62<b>Sm</b></td>
+                <td class="ele lanthanides" onclick="change(this.firstElementChild.innerText)">63<b>Eu</b></td>
+                <td class="ele lanthanides" onclick="change(this.firstElementChild.innerText)">64<b>Gd</b></td>
+                <td class="ele lanthanides" onclick="change(this.firstElementChild.innerText)">65<b>Tb</b></td>
+                <td class="ele lanthanides" onclick="change(this.firstElementChild.innerText)">66<b>Dy</b></td>
+                <td class="ele lanthanides" onclick="change(this.firstElementChild.innerText)">67<b>Ho</b></td>
+                <td class="ele lanthanides" onclick="change(this.firstElementChild.innerText)">68<b>Er</b></td>
+                <td class="ele lanthanides" onclick="change(this.firstElementChild.innerText)">69<b>Tm</b></td>
+                <td class="ele lanthanides" onclick="change(this.firstElementChild.innerText)">70<b>Yb</b></td>
+                <td class="ele lanthanides" onclick="change(this.firstElementChild.innerText)">71<b>Lu</b></td>
+            </tr>
+            <tr>
+                <td class="text" colspan="6">Actinides</td>
+                <td class="ele actinides " onclick="change(this.firstElementChild.innerText)">90<b>Th</b></td>
+                <td class="ele actinides" onclick="change(this.firstElementChild.innerText)">91<b>Pa</b></td>
+                <td class="ele actinides" onclick="change(this.firstElementChild.innerText)">92<b>U</b></td>
+                <td class="ele actinides" onclick="change(this.firstElementChild.innerText)">93<b>Np</b></td>
+                <td class="ele actinides" onclick="change(this.firstElementChild.innerText)">94<b>Pu</b></td>
+                <td class="ele actinides" onclick="change(this.firstElementChild.innerText)">95<b>Am</b></td>
+                <td class="ele actinides" onclick="change(this.firstElementChild.innerText)">96<b>Cm</b></td>
+                <td class="ele actinides" onclick="change(this.firstElementChild.innerText)">97<b>Bk</b></td>
+                <td class="ele actinides" onclick="change(this.firstElementChild.innerText)">98<b>Cf</b></td>
+                <td class="ele actinides" onclick="change(this.firstElementChild.innerText)">99<b>Es</b></td>
+                <td class="ele actinides" onclick="change(this.firstElementChild.innerText)">100<b>Fm</b></td>
+                <td class="ele actinides" onclick="change(this.firstElementChild.innerText)">101<b>Md</b></td>
+                <td class="ele actinides" onclick="change(this.firstElementChild.innerText)">102<b>No</b></td>
+                <td class="ele actinides" onclick="change(this.firstElementChild.innerText)">103<b>Lr</b></td>
+            </tr>
+            <td colspan="10">
+                <ul>
+                    <li onclick="desaperate(this.firstElementChild.innerText,this.getAttribute('class'))" class="alkali-metals"><p>Alkali metals</p></li>
+                    <li onclick="desaperate(this.firstElementChild.innerText,this.getAttribute('class'))" class="alkaline-earth-metals"><p>Alkaline earth metals</p></li>
+                    <li onclick="desaperate(this.firstElementChild.innerText,this.getAttribute('class'))" class="transition-metals"><p>Transition metals</p></li>
+                    <li onclick="desaperate(this.firstElementChild.innerText,this.getAttribute('class'))" class="post-transition-metals"><p>Post-transition metals</p></li>
+                    <li onclick="desaperate(this.firstElementChild.innerText,this.getAttribute('class'))" class="metalloids"><p>Metalloids</p></li>
+                </ul>
+            </td>
+            <td colspan="10">
+                <ul>
+                    <li onclick="desaperate(this.firstElementChild.innerText,this.getAttribute('class'))" class="reactive-non-metals"><p>Reactive non-metals</p></li>
+                    <li onclick="desaperate(this.firstElementChild.innerText,this.getAttribute('class'))" class="nobel-gases"><p>Noble gases</p></li>
+                    <li onclick="desaperate(this.firstElementChild.innerText,this.getAttribute('class'))" class="lanthanides"><p>Lanthanides</p></li>
+                    <li onclick="desaperate(this.firstElementChild.innerText,this.getAttribute('class'))" class="actinides"><p>Actinides</p></li>
+                    <li onclick="unknown(this.getAttribute('class'))" class="unknown-properties"><p>Unknown properties</p></li>
+                </ul>
+            </td>
+        </table>
+    </div>
+    <hr>
+    
+    <footer>
+        <p class="contact-txt"> Reach us on :</p>
+            <div class="contact">
+                <a target="_blank" href="https://www.instagram.com"><img src="reach-us-images/instagram.png" alt="Instagram"><b class="footer">Instagram</b></a>
+            </div>
+            <div class="contact">
+                <a target="_blank" href="https://www.facebook.com"><img src="reach-us-images/facebook.png" alt="Facebook"><b class="footer">Facebook</b></a>
+            </div>
+            <div class="contact">
+                <a target="_blank" href="mailto:shivamsahu0124@gmail.com"><img src="reach-us-images/e-mail.png" alt="E-mail"><b class="footer">E-Mail</b></a>
+            </div>
+        <hr>
+    </footer>
+    <script src="script/index.js"></script>
+</body>
+</html>

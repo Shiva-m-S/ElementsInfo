@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN</title>
+    <link rel="stylesheet" href="recover/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Recovery..</h2>
+        <label for="username">Enter Username:</label><br>
+        <input type="text" id="username" onkeyup="this.value=this.value.replace(/[^a-zA-Z0-9]/g,''),document.getElementById('incorrect').innerText='&nbsp'"><br>
+        <a href="/log-in" class="login">Log In</a>
+        <a href="sign-up" class="create-account">Create an account.</a><br>
+        <button class="submit" title="submit"  id="submit">SUBMIT</button>
+        <button class="reset" title="reset" id="reset">RESET</button> 
+        <div id="otp">
+            <label for="enter-otp" class="otp" style="margin-left:40px; margin-top:50px;">Enter the four digit otp sent to your <br>e-mail</label>
+            <input class="input" maxlength="4" onkeyup="this.value=this.value.replace(/[^0-9]/g,''),document.getElementById('taken').innerText=''" id="enter-otp"> 
+            <button type="submit" id="submit-otp" >SUBMIT</button>  
+        </div>
+        <p id="incorrect"></p>
+    </div>
+    <script src="recover/script.js"></script>
+</body>
+</html>

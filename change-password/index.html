@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN</title>
+    <link rel="stylesheet" href="changePassword/style.css">
+</head>
+<body>
+    <div class="container">
+            <h2>Change Password ...</h2>
+        <label for="password">Enter new Password:</label><br>
+        <input type="text" id="password" onkeyup="document.getElementById('nomatch').innerText=''"  minlength="8"><br>
+        <label for="confirm-password">Confirm Password:</label><br>
+        <input type="text" id="confirmpassword"  minlength="8"><br>
+        <a href="sign-up" >Create an account.</a><br>
+        <button class="submit" title="submit"  id="submit">SUBMIT</button>
+        <button class="reset" title="reset" id="reset">RESET</button> 
+        <p id="nomatch"></p>
+    </div>
+    <script src="changePassword/script.js"></script>
+</body>
+</html>

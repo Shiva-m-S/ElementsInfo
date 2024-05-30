@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up</title>
+    <link rel="stylesheet" href="signup/style.css">
+</head>
+<body>
+    <div class="container">
+            <h2>SIGN UP...</h2>
+            <p>All the fields are mendatory</p>
+        <label for="username" class="label">Username:</label><br>
+        <input type="text" class="input" id="username" onkeyup="this.value=this.value.replace(/[^a-zA-Z0-9]/g,''),document.getElementById('taken').innerText='',document.getElementById('invalid').innerText = ''" required><br>
+        <label for="e-mail" class="label">E-mail ID:</label><br>
+        <input type="email" class="input" id="e-mail" required onkeyup="document.getElementById('invalid').innerText = ''"><br>
+        <label for="password" class="label" > Create Password:</label><br>
+        <input type="password" class="input" id="password" minlength="8"  onkeyup="document.getElementById('invalid').innerText = ''" required><br>
+        <a href="/log-in" id="already">Already have an account.</a><br>
+        <button class="submit" type="submit" title="submit">SUBMIT</button> 
+        <button class="reset" title="reset">RESET</button> 
+        <p id="taken"></p>
+        <div id="otp">
+            <label for="enter-otp" class="otp" style="margin-left:40px; margin-top:50px;">Enter the four digit otp sent to your <br> e-mail</label>
+            <input class="input" maxlength="4" onkeyup="this.value=this.value.replace(/[^0-9]/g,''),document.getElementById('taken').innerText='',document.getElementById('invalid').innerText = ''" id="enter-otp"> 
+            <button type="submit" id="submit-otp" >SUBMIT</button>  
+        </div>
+        <p id="invalid"></p>
+    </div>    
+    <script src="signup/script.js"></script>
+</body>
+</html>

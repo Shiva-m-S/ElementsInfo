@@ -1,0 +1,187 @@
+body{
+    box-sizing: border-box;
+    user-select: none;
+    background-image:url('../background/bgimage.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#sign-up{
+    background-color: gold;
+    color: brown;
+    border:2px solid black;
+    border-radius: 25px;
+    padding:5px 10px;
+    width: 130px;
+    box-shadow: 2px 7px 5px green;
+}
+#sign-up-button{
+    height: 200px;
+    text-align: left;
+}
+#sign-up:active{
+    box-shadow: 2px 3px 2px green;
+    margin-top:7px;
+}
+div.sign-up{
+    height: 0px;
+    width: 130px;
+    text-align: center;
+    border-radius: 20%;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 1s;
+}
+a{
+    color: black;
+}
+p.sign-up{
+    margin-top: 30px;
+}
+a.signup{
+    color: red;
+    font-size: larger;
+}
+div.container{
+    width: fit-content;
+    height:fit-content;
+    border: 5px solid rgb(110, 173, 209);
+    border-radius:30px;
+    margin:auto;
+    background-color: transparent;
+    padding: 20px 100px;
+}
+.heading{
+    text-align: center;
+    color: brown;
+}
+table.table{
+    width: 100%;
+    color:lightgrey;
+}
+.period p{
+    transform: rotate(270deg);
+}
+h3{
+    display: inline;
+    color: rgb(189, 16, 102);
+}
+#details{
+    text-align: center;
+}
+.iframe{
+    text-align: center;
+}
+#iframe{
+    width: 70%;
+    height: 0px;
+    border: 5px solid cadetblue;
+    resize: both;
+    background-color: black;
+    overflow: hidden;
+    transition-property: height;
+    transition-duration: 1s;
+}
+.number{
+    text-align: center;
+    padding: 0px 10px;
+    height: 50px;
+    color: black;
+}
+.text{
+    text-align: center;
+    color:black;
+}
+.ele{
+    height: fit-content;
+    width: 50px;
+    border:3px solid red;
+    border-radius: 10px;
+    padding:2px 15px 15px 2px;
+    cursor: pointer;
+}
+.ele b{
+    font-size: larger;
+    display: block;
+    margin-left: 15px;
+}
+span{
+    font-size: 50px;
+}
+.gap{
+    height: 50px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    border: 3px solid rgb(255, 123, 0);
+    height: 70px;
+    border-radius: 25px;
+    margin: 10px;
+    text-align: center;
+    padding-top: 10px;
+    font-size: larger;
+}
+.alkali-metals{
+    background-color:rgb(35, 140, 107) ;
+}
+.alkaline-earth-metals{
+    background-color: rgb(124, 0, 54);
+}
+.transition-metals{
+    background-color: rgb(138, 43, 247);
+}
+.post-transition-metals{
+    background-color: rgb(76, 158, 130);
+}
+.metalloids{
+    background-color: rgb(111, 61, 0);
+}
+.reactive-non-metals{
+    background-color: rgb(26, 64, 98);
+}
+.nobel-gases{
+    background-color: rgb(130, 52, 0);
+}
+.lanthanides{
+    background-color: rgb(55, 104, 146);
+}
+.actinides{
+    background-color: rgb(156, 86, 0);
+}
+.unknown-properties{
+    background-color: rgb(127, 140, 152);
+}
+footer{
+    color: black;
+    text-align: center;
+}
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: inline;
+}
+div.footer{
+    height: 150px;
+    width: 150px;
+    display: inline;
+    border:5px solid red;
+}
+.contact-txt{
+    font-size: larger;
+}
+.contact{
+    height: 130px;
+    width: 100px;
+    display: inline-block;
+    margin: 25px;
+}
+.highlighted{
+    background-color: black;
+}
