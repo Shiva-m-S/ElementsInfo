@@ -17,6 +17,7 @@ submit.addEventListener('click',()=>{
         const changePassword = new XMLHttpRequest()
         changePassword.onload = function(){
             if(this.responseText.length < 100){
+                console.log(this.responseText.length)
                 document.getElementsByTagName('body')[0].innerHTML = this.responseText;
             }else{
                 document.getElementById('nomatch').innerHTML = 'Error: Please try after some time.';

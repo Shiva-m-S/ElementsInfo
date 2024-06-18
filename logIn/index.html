@@ -10,7 +10,7 @@
     <div class="container">
             <h2>Log In...</h2>
         <label for="username">Username:</label><br>
-        <input type="text" id="username" onkeyup="this.value=this.value.replace(/[^a-zA-Z0-9]/g,''),document.getElementById('taken').innerText=''"><br>
+        <input type="text" id="username" onkeyup="this.value=this.value.replace(/[^a-z0-9@]/g,''),document.getElementById('incorrect').innerText=''"><br>
         <label for="password">Password:</label><br>
         <input type="text" id="password" ><br>
         <a href="/recovery" >Fotget password?</a>

@@ -11,7 +11,7 @@
             <h2>SIGN UP...</h2>
             <p>All the fields are mendatory</p>
         <label for="username" class="label">Username:</label><br>
-        <input type="text" class="input" id="username" onkeyup="this.value=this.value.replace(/[^a-zA-Z0-9]/g,''),document.getElementById('taken').innerText='',document.getElementById('invalid').innerText = ''" required><br>
+        <input type="text" class="input" id="username" onkeyup="this.value=this.value.replace(/[^a-z0-9@]/g,''),document.getElementById('taken').innerText='',document.getElementById('invalid').innerText = ''" required><br>
         <label for="e-mail" class="label">E-mail ID:</label><br>
         <input type="email" class="input" id="e-mail" required onkeyup="document.getElementById('invalid').innerText = ''"><br>
         <label for="password" class="label" > Create Password:</label><br>

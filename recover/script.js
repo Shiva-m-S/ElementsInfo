@@ -37,7 +37,7 @@ submitOTP.addEventListener('click',()=>{
         const OTP = new XMLHttpRequest();
         OTP.onload = function(){
             if(this.responseText == 'true'){
-                incorrect.innerHTML = 'Correct OTP.<br><a href="/changePassword">Create new password;</a>';
+                incorrect.innerHTML = 'Correct OTP.<br><a href="/changePassword">Create new password;</a><br><a href="http://localhost:8000">Go to homepage</a>';
             }else if(this.responseText == 'false'){
                 incorrect.innerHTML = 'Incorrect OTP';
             }

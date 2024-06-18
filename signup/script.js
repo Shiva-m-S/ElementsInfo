@@ -19,7 +19,6 @@ submit.addEventListener('click',()=>{
             }
         }else{
             document.getElementById('invalid').innerText = 'Please fill al the fields.';
-
         }
     }
     addUser.open('post',`/signup/${username},${email},${password}`);

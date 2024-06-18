@@ -24,7 +24,7 @@ function details(name,className){
 function unknown(name){
     document.getElementById("details").innerHTML = `<h3>Sorry, No details are available about: <h3>"${name}"`;
     iframe.setAttribute('src','');
-    iframe.style.display = 'none';
+    iframe.style.height = '0px';
     const elements = document.querySelectorAll('.highlighted');
     for(let i = 0;i<elements.length; i++){
         elements[i].classList.remove('highlighted');

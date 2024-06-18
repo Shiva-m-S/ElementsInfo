@@ -10,7 +10,7 @@
     <div class="container">
         <h2>Recovery..</h2>
         <label for="username">Enter Username:</label><br>
-        <input type="text" id="username" onkeyup="this.value=this.value.replace(/[^a-zA-Z0-9]/g,''),document.getElementById('incorrect').innerText='&nbsp'"><br>
+        <input type="text" id="username" onkeyup="this.value=this.value.replace(/[^a-z0-9@]/g,''),document.getElementById('incorrect').innerText='&nbsp'"><br>
         <a href="/log-in" class="login">Log In</a>
         <a href="sign-up" class="create-account">Create an account.</a><br>
         <button class="submit" title="submit"  id="submit">SUBMIT</button>
