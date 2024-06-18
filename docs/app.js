@@ -174,7 +174,7 @@ app.post('/log-in/:username/:password',(req, res)=>{
       } 
     }
   }
-  let query = `SELECT * FROM test.users WHERE Name = "${username}";`
+  let query = `SELECT Password FROM test.users WHERE Name = "${username}";`
   runQuery(query, checkUser) ;
   })
 
